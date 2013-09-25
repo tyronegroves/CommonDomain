@@ -45,6 +45,7 @@
       <Link>Properties\VersionAssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="ConflictingCommandException.cs" />
+    <Compile Include="SagaRepositoryExtensions.cs" />
     <Compile Include="IConstructAggregates.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="ISagaRepository.cs" />

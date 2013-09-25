@@ -5,7 +5,7 @@ namespace CommonDomain.Persistence
 
 	public interface ISagaRepository
 	{
-		TSaga GetById<TSaga>(Guid sagaId) where TSaga : class, ISaga, new();
-		void Save(ISaga saga, Guid commitId, Action<IDictionary<string, object>> updateHeaders);
+		TSaga GetById<TSaga>(Guid sagaId, string bucketId) where TSaga : class, ISaga, new();
+		void Save(ISaga saga, Guid commitId, string bucketId, Action<IDictionary<string, object>> updateHeaders);
 	}
 }
